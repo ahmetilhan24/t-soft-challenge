@@ -1,0 +1,36 @@
+//Header
+.header {
+    width: 100%;
+    height: auto;
+    padding: 30px 50px;
+    justify-content: space-between;
+    border-bottom: 1px solid $border-one;
+    &__logo {
+        &__link {
+            svg {
+                height: 40px;
+            }
+        }
+    }
+    &__nav {
+        &__ul {
+            &__li {
+                list-style: none;
+                display: inline-block;
+                a {
+                    text-decoration: none;
+                    color: $dark-two;
+                    font-size: 16px;
+                    font-weight: 500;
+                    @include transition(0.2s);
+                    padding: 10px 15px;
+                    &:hover {
+                        background-color: $hover-one;
+                        border-radius: 32px;
+                        color: $dark-one;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+//Buttons
+.btn{
+    display: block;
+    border: none;
+    height: 54px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 0 30px;
+    cursor: pointer;
+    @include transition(.2s);
+    &--bg--dark{
+        color: $white;
+        background-color: $dark-one;
+    }
+    &--bg--none{
+        background-color: transparent;
+    }
+    &:hover{
+        opacity: .9;
+    }
+}
