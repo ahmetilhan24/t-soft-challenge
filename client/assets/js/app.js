@@ -21,29 +21,27 @@ const navMenu = (e) => {
 //fetch data for posts
 var data = [];
 var filterList = [];
-const getPosts = () => {
-    var elems, params;
-    elems = {
-        src: "./fake-data/data.json",
-        innerArea: document.getElementById("cardsarea")
+//elems for data and inner
+const dataElems = {
+    src: "./fake-data/data.json",
+    innerArea: document.getElementById("cardsarea"),
+    rMethod: "GET",
+    rHeaders: {
+        'Content-Type': 'application/json;charset=utf-8'
     }
-    //params for fetch api
-    params = {
-        rMethod: "GET",
-        rHeaders: {
-            'Content-Type': 'application/json;charset=utf-8'
-        }
-    },
-        //get data with fetch api
-        fetch(elems.src, {
-            method: params.rMethod,
-            headers: params.rHeaders
-        }).then(res => {
-            return res.json();
-        }).then(res => {
-            data = res.posts;
-            innerLoop(elems.innerArea, data);
-        })
+}
+
+const getPosts = () => {
+    //get data with fetch api
+    fetch(dataElems.src, {
+        method: dataElems.rMethod,
+        headers: dataElems.rHeaders
+    }).then(res => {
+        return res.json();
+    }).then(res => {
+        data = res.posts;
+        innerLoop(dataElems.innerArea, data);
+    })
 }
 //search event
 const search = () => {
@@ -57,22 +55,11 @@ const search = () => {
 }
 //filter posts array
 const filterPosts = (val) => {
-    var elems, params;
-    elems = {
-        src: "./fake-data/data.json",
-        innerArea: document.getElementById("cardsarea")
-    }
-    params = {
-        rMethod: "GET",
-        rHeaders: {
-            'Content-Type': 'application/json;charset=utf-8'
-        }
-    }
     if (val.length >= 3) {
         //get clear data
-        fetch(elems.src, {
-            method: params.rMethod,
-            headers: params.rHeaders
+        fetch(dataElems.src, {
+            method: dataElems.rMethod,
+            headers: dataElems.rHeaders
         }).then(res => {
             return res.json();
         }).then(res => {
@@ -80,12 +67,12 @@ const filterPosts = (val) => {
                 return post.author.nick.toLowerCase() === val.toLowerCase();
             });
             filterList = newData;
-            elems.innerArea.innerHTML = "";
-            innerLoop(elems.innerArea, filterList);
+            dataElems.innerArea.innerHTML = "";
+            innerLoop(dataElems.innerArea, filterList);
         })
     }
     else {
-        innerLoop(elems.innerArea, data);
+        innerLoop(dataElems.innerArea, data);
     }
 }
 //inner for funtion

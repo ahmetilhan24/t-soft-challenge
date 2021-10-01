@@ -4,10 +4,10 @@
             "id": 1,
             "author": {
                 "id": 1,
-                "nick": "ahmet5676",
+                "nick": "hakanaslan",
                 "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
             },
-            "tool": "FİGMA",
+            "tool": "SKETCH",
             "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png",
             "info": {
                 "clap": 22,
@@ -15,84 +15,98 @@
             }
         },
         {
-            "id": 1,
+            "id": 2,
             "author": {
-                "id": 1,
-                "nick": "betül",
+                "id": 2,
+                "nick": "ahmetree",
                 "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
             },
-            "tool": "FİGMA",
-            "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png",
+            "tool": "XD",
+            "poster": "https://www.uidesigndaily.com/uploads/1448/day_1448_thumb.png",
             "info": {
                 "clap": 22,
                 "code": 30
             }
         },
         {
-            "id": 1,
+            "id": 3,
             "author": {
-                "id": 1,
-                "nick": "ahmet56",
-                "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
-            },
-            "tool": "FİGMA",
-            "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png",
-            "info": {
-                "clap": 22,
-                "code": 30
-            }
-        },
-        {
-            "id": 1,
-            "author": {
-                "id": 1,
+                "id": 3,
                 "nick": "ahmet",
                 "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
             },
-            "tool": "FİGMA",
-            "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png",
+            "tool": "SKETCH",
+            "poster": "https://www.uidesigndaily.com/uploads/1442/day_1442_thumb.png",
             "info": {
                 "clap": 22,
                 "code": 30
             }
         },
         {
-            "id": 1,
+            "id": 4,
             "author": {
-                "id": 1,
-                "nick": "ahmet5676",
+                "id": 4,
+                "nick": "mineaksan",
                 "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
             },
             "tool": "FİGMA",
-            "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png",
+            "poster": "https://www.uidesigndaily.com/uploads/1437/day_1437_thumb.png",
+            "info": {
+                "clap": 22,
+                "code": 12
+            }
+        },
+        {
+            "id": 5,
+            "author": {
+                "id": 5,
+                "nick": "nonick",
+                "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
+            },
+            "tool": "XD",
+            "poster": "https://www.uidesigndaily.com/uploads/1436/day_1436_thumb.png",
             "info": {
                 "clap": 22,
                 "code": 30
             }
         },
         {
-            "id": 1,
+            "id": 6,
             "author": {
-                "id": 1,
-                "nick": "ahmet5676",
+                "id": 6,
+                "nick": "snowboarder",
                 "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
             },
             "tool": "FİGMA",
-            "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png",
+            "poster": "https://www.uidesigndaily.com/uploads/1434/day_1434_thumb.png",
             "info": {
                 "clap": 22,
                 "code": 30
             }
         },
         {
-            "id": 1,
+            "id": 7,
             "author": {
-                "id": 1,
-                "nick": "ahmet5676",
+                "id": 7,
+                "nick": "selimoktan",
                 "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
             },
-            "tool": "FİGMA",
-            "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png",
+            "tool": "SKETCH",
+            "poster": "https://www.uidesigndaily.com/uploads/1432/day_1432_thumb.png",
+            "info": {
+                "clap": 22,
+                "code": 30
+            }
+        },
+        {
+            "id": 8,
+            "author": {
+                "id": 8,
+                "nick": "ferhatgüngör",
+                "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
+            },
+            "tool": "XD",
+            "poster": "https://www.uidesigndaily.com/uploads/1425/day_1425_thumb.png",
             "info": {
                 "clap": 22,
                 "code": 30
