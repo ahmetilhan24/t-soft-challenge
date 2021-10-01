@@ -1,0 +1,4 @@
+++Reset.css bütün tarayıcılardaki öntanımlı değerleri sıfırlar. Normalize.css ise bütün tarayıcılardaki
+varsayılan ön tanımlı değerleri belli bir standarda getirir.
+++Bu projemizde sadece normalize kullandık sonuç olarak çoğu tarayıcıda örnek veriyorum chrome 
+pencere marginin3 10 px vermiş opera ise 15 px vermiş diyelim. İşte normalize.css bu boşlukları istedğimiz değere getirir ya da ön tanımlı değere.

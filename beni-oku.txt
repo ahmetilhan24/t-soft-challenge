@@ -1,0 +1,13 @@
+++Herhangi bir kütüphane ya da framework kullanılmadı.
+++Html tarafında HTML5 Seo etiketleri kullanmaya çalıştım.
+++Proje başlarken flex ile kodlayacağım için flex-classes.css adlı bir dosyaya
+kendi yaratığım css'leri BEM teknolojisine göre düzenleyerek geçtim.
+++Component sistemini kullanmaya çalıştım(mümkün olduğu kadarıyla sass html)
+++Javascript tarafında elimizde bir API olmadığı için json dosyası oluşturup o json'u kullanarak
+hack yöntemler ile bir Search Box yapmaya çalıştım. 
+++Esnek ve basit bir arama kutusu yapmaya çalıştım. Sadece kullanıcı adı aramasıyla response alınabiliyor.
+++Ecmascript 6 ve üzeri kullandım. Use Strict kuralını da kullandım.
+++Bütün kodlar ve proje ortamının kurulması da dahil 1 gün sürdü.
+++Umarım beğenirsiniz. Kolay gelsin
+
+---------HTML5, SASS, JAVASCRİPT, ECMASCRİPT6+, NPM, GULP, JSON---------------
