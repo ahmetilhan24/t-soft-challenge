@@ -19,8 +19,13 @@
         }
     }
     &__nav {
-        max-height: 0;
+        @media only screen and (max-width: $medium) {
+            max-height: 0;
+        }
         overflow: hidden;
+        position: relative;
+        z-index: 9999
+        ;
         @media only screen and (max-width: $medium) {
             display: none;
         }

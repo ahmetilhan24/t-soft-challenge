@@ -1,5 +1,5 @@
 //Buttons
-.btn{
+.btn {
     display: block;
     border: none;
     height: 54px;
@@ -8,28 +8,28 @@
     border-radius: 10px;
     padding: 0 30px;
     cursor: pointer;
-    @include transition(.2s);
-    &--bg--dark{
+    @include transition(0.2s);
+    &--bg--dark {
         color: $white;
         background-color: $dark-one;
     }
-    &--bg--none{
+    &--bg--none {
         background-color: transparent;
     }
-    &:hover{
-        opacity: .9;
+    &:hover {
+        opacity: 0.9;
     }
 }
 //filterts
-.filters{
-    &__short{
+.filters {
+    &__short {
         width: 236px;
         height: 61px;
         background-color: $purple-one;
         border: 1px solid $border-one;
         border-radius: 70px;
         padding: 5px;
-        &__link{
+        &__link {
             width: 50%;
             height: 100%;
             text-decoration: none;
@@ -37,19 +37,18 @@
             color: $dark-two;
             font-weight: 600;
             font-size: 16px;
-            &--active{
+            &--active {
                 background-color: $white;
                 color: $dark-one;
-            border: 1px solid $border-one;
-
+                border: 1px solid $border-one;
             }
-            &:hover{
+            &:hover {
                 border: 1px solid $border-one;
             }
         }
     }
-    &__category{
-        &__link{
+    &__category {
+        &__link {
             height: 44px;
             padding: 0 10px;
             border-radius: 32px;
@@ -57,64 +56,94 @@
             font-size: 16px;
             font-weight: 500;
             color: $dark-two;
-            &--active{
-            border: 1px solid $border-one;
-            color: $dark-one;
-            background-color: $purple-one;
+            &--active {
+                border: 1px solid $border-one;
+                color: $dark-one;
+                background-color: $purple-one;
             }
-            &:hover{
+            &:hover {
                 border: 1px solid $border-one;
             }
         }
     }
-    &__tool{
-        &__item{
+    &__tool {
+        &__item {
             width: 61px;
             height: 61px;
             background-color: $purple-one;
             border: 1px solid $border-one;
             border-radius: 50%;
             margin: 0 7.5px;
-            &:nth-last-child(1){
+            &:nth-last-child(1) {
                 margin-right: 0;
             }
-            &--active{
+            &--active {
                 border-color: $pink-one;
             }
-            &:hover{
+            &:hover {
                 border-color: $dark-two;
             }
         }
     }
 }
 //item card
-.card{
-    width: 425px;
-    &__top{
+.card {
+    width: 24%;
+    margin-bottom: 15px;
+    @media only screen and (max-width: $extra-large) {
+        width: 32%;
+    }
+    @media only screen and (max-width: $medium) {
+        width: 49%;
+    }
+    @media only screen and (max-width: $small) {
+        width: 100%;
+    }
+    &__top {
         width: 100%;
         height: 319px;
-        border-radius: 15px;
         overflow: hidden;
-        &__poster{
+        &__poster {
             width: 100%;
             height: 100%;
-            img{
-                object-fit: cover;
+            &__img {
+                width: 100%;
+                height: 100%;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                }
             }
         }
     }
-    &__bottom{
+    &__bottom {
         width: 100%;
         padding-top: 20px;
-        &__author{
-            &__avatar{
+        justify-content: space-between;
+        &__author {
+            &__avatar {
                 margin-right: 14px;
-                img{
+                img {
                     width: 38px;
                     height: 38px;
                     overflow: hidden;
                     border-radius: 50%;
                     object-fit: cover;
+                }
+            }
+            &__nick {
+                font-size: 14px;
+            }
+        }
+        &__info {
+            &__item {
+                margin-left: 20px;
+                p {
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-left: 5px;
                 }
             }
         }
