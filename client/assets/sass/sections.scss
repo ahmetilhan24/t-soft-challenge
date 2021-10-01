@@ -1,5 +1,6 @@
 .search {
     width: 100%;
+    position: relative;
     height: 427px;
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, $purple-one 0%, $white 100%);
@@ -20,27 +21,54 @@
         }
         &__input {
             width: 100%;
-            box-shadow: 0 16px 35px #0204841f;
+            box-shadow: 0 16px 35px #02048415;
             border-radius: 10px;
             border: 1px solid $border-one;
             height: 74px;
+            margin-top: 38px;
+            overflow: hidden;
+            @media only screen and (max-width: $medium) {
+                height: 60px;
+            }
             button{
                 background-color: transparent;
                 padding: 0;
-                width: 160px;
+                width: 168px;
+                border-right: 1px solid $border-one;
                 svg{
-                    margin-left: ;
+                    margin-left: 10px;
                 }
             }
             .form-control {
-                width: calc(100% - 160px);
+                width: calc(100% - 168px);
                 height: 100%;
                 input[type=text] {
                     height: 100%;
                     width: 100%;
                     border: none
                 }
+                svg{
+                    margin: 0 10px;
+                    path{
+                        stroke: $dark-two;
+                    }
+                }
             }
+        }
+    }
+    //fixed day 
+    &__day{
+        position: absolute;
+        left: 0;
+        top: 30px;
+        width: 106px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: $white;
+        &__text{
+            color: $pink-one;
+            font-size: 16px;
+            font-weight: 600;
         }
     }
 }

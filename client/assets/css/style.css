@@ -151,6 +151,7 @@ body {
 
 .search {
   width: 100%;
+  position: relative;
   height: 427px;
   background: white;
   background: linear-gradient(0deg, #FCFCFF 0%, #fff 100%); }
@@ -169,18 +170,42 @@ body {
       line-height: 28px; }
     .search__content__input {
       width: 100%;
-      box-shadow: 0 16px 35px #0204841f;
+      box-shadow: 0 16px 35px #02048415;
       border-radius: 10px;
       border: 1px solid #EFEFFF;
-      height: 74px; }
+      height: 74px;
+      margin-top: 38px;
+      overflow: hidden; }
+      @media only screen and (max-width: 992px) {
+        .search__content__input {
+          height: 60px; } }
       .search__content__input button {
         background-color: transparent;
         padding: 0;
-        width: 160px; }
+        width: 168px;
+        border-right: 1px solid #EFEFFF; }
+        .search__content__input button svg {
+          margin-left: 10px; }
       .search__content__input .form-control {
-        width: calc(100% - 160px);
+        width: calc(100% - 168px);
         height: 100%; }
         .search__content__input .form-control input[type=text] {
           height: 100%;
           width: 100%;
           border: none; }
+        .search__content__input .form-control svg {
+          margin: 0 10px; }
+          .search__content__input .form-control svg path {
+            stroke: #202142ca; }
+  .search__day {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 106px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #fff; }
+    .search__day__text {
+      color: #FF6A95;
+      font-size: 16px;
+      font-weight: 600; }
