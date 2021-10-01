@@ -1,10 +1,15 @@
 //Header
 .header {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
     width: 100%;
     height: auto;
     padding: 30px 50px;
     justify-content: space-between;
     border-bottom: 1px solid $border-one;
+    background-color: $white;
     @media only screen and (max-width: $medium) {
         padding: 16px 30px;
     }
@@ -24,11 +29,9 @@
     &__nav {
         @media only screen and (max-width: $medium) {
             max-height: 0;
-        }
-        overflow: hidden;
-        position: relative;
-        z-index: 9999;
-        @media only screen and (max-width: $medium) {
+            overflow: hidden;
+            position: relative;
+            z-index: 9999;
             display: none;
         }
         &__ul {
@@ -51,24 +54,24 @@
             }
         }
         //nav open
-        &--open{
+        &--open {
             display: flex;
             width: 100%;
             position: fixed;
-            top: 70px;
+            top: 69px;
             left: 0;
             background-color: $white;
-            animation: navMenu .4s ease-out forwards ;
-            ul{
+            animation: navMenu 0.4s ease-out forwards;
+            ul {
                 width: 100%;
-                li{
+                li {
                     width: 100%;
                     display: block;
-                    a{
+                    a {
                         display: block;
                         width: 100%;
                         padding: 20px 30px;
-                        &:hover{
+                        &:hover {
                             border-radius: 0;
                         }
                     }
@@ -76,11 +79,11 @@
             }
         }
         //mobile buttons
-        &__mobile__btns{
+        &__mobile__btns {
             display: none;
             width: 100%;
             padding: 0 30px;
-            button{
+            button {
                 padding: 10px 0;
             }
             @media only screen and (max-width: $medium) {
@@ -113,7 +116,7 @@
                 height: 2px;
                 background-color: $dark-one;
                 position: absolute;
-                transition: 0.2s ease-in-out;
+                @include transition(0.1s);
                 right: 0;
             }
             &::before {
@@ -128,7 +131,7 @@
                 &::before {
                     transform: rotate(-45deg);
                 }
-                &::after{
+                &::after {
                     transform: rotate(45deg);
                 }
             }

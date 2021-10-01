@@ -21,10 +21,12 @@ body {
   width: 100%;
   height: auto;
   padding: 0 50px;
+  margin-top: 115px;
   max-width: 100%; }
   @media only screen and (max-width: 992px) {
     .container-in {
-      padding: 0 36px; } }
+      padding: 0 36px;
+      margin-top: 70px; } }
   @media only screen and (max-width: 576px) {
     .container-in {
       padding: 0 20px; } }
@@ -104,7 +106,7 @@ body {
 
 .card {
   width: 24%;
-  margin-bottom: 15px; }
+  margin-bottom: 30px; }
   @media only screen and (max-width: 1400px) {
     .card {
       width: 32%; } }
@@ -117,7 +119,8 @@ body {
   .card__top {
     width: 100%;
     height: 319px;
-    overflow: hidden; }
+    overflow: hidden;
+    border-radius: 15px; }
     .card__top__poster {
       width: 100%;
       height: 100%; }
@@ -128,7 +131,13 @@ body {
           object-fit: cover;
           width: 100%;
           height: 100%;
-          border-radius: 15px; }
+          transition: 0.2s;
+          -webkit-transition: 0.2s;
+          -moz-transition: 0.2s;
+          -ms-transition: 0.2s;
+          -o-transition: 0.2s; }
+        .card__top__poster__img:hover img {
+          transform: scale(1.1); }
   .card__bottom {
     width: 100%;
     padding-top: 20px;
@@ -151,11 +160,16 @@ body {
         margin-left: 5px; }
 
 .header {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
   width: 100%;
   height: auto;
   padding: 30px 50px;
   justify-content: space-between;
-  border-bottom: 1px solid #EFEFFF; }
+  border-bottom: 1px solid #EFEFFF;
+  background-color: #fff; }
   @media only screen and (max-width: 992px) {
     .header {
       padding: 16px 30px; } }
@@ -167,62 +181,59 @@ body {
     @media only screen and (max-width: 992px) {
       .header__logo__link svg {
         height: 36px; } }
-  .header__nav {
-    overflow: hidden;
-    position: relative;
-    z-index: 9999; }
-    @media only screen and (max-width: 992px) {
-      .header__nav {
-        max-height: 0; } }
-    @media only screen and (max-width: 992px) {
-      .header__nav {
-        display: none; } }
-    .header__nav__ul__li {
-      list-style: none;
-      display: inline-block; }
-      .header__nav__ul__li a {
-        text-decoration: none;
-        color: #202142b4;
-        font-size: 16px;
-        font-weight: 500;
-        transition: 0.2s;
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -ms-transition: 0.2s;
-        -o-transition: 0.2s;
-        padding: 10px 15px; }
-        .header__nav__ul__li a:hover {
-          background-color: #F1F1FD;
-          border-radius: 32px;
-          color: #202142; }
-    .header__nav--open {
-      display: flex;
-      width: 100%;
-      position: fixed;
-      top: 70px;
-      left: 0;
-      background-color: #fff;
-      animation: navMenu .4s ease-out forwards; }
-      .header__nav--open ul {
-        width: 100%; }
-        .header__nav--open ul li {
+  @media only screen and (max-width: 992px) {
+    .header__nav {
+      max-height: 0;
+      overflow: hidden;
+      position: relative;
+      z-index: 9999;
+      display: none; } }
+  .header__nav__ul__li {
+    list-style: none;
+    display: inline-block; }
+    .header__nav__ul__li a {
+      text-decoration: none;
+      color: #202142b4;
+      font-size: 16px;
+      font-weight: 500;
+      transition: 0.2s;
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+      -o-transition: 0.2s;
+      padding: 10px 15px; }
+      .header__nav__ul__li a:hover {
+        background-color: #F1F1FD;
+        border-radius: 32px;
+        color: #202142; }
+  .header__nav--open {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 69px;
+    left: 0;
+    background-color: #fff;
+    animation: navMenu 0.4s ease-out forwards; }
+    .header__nav--open ul {
+      width: 100%; }
+      .header__nav--open ul li {
+        width: 100%;
+        display: block; }
+        .header__nav--open ul li a {
+          display: block;
           width: 100%;
-          display: block; }
-          .header__nav--open ul li a {
-            display: block;
-            width: 100%;
-            padding: 20px 30px; }
-            .header__nav--open ul li a:hover {
-              border-radius: 0; }
-    .header__nav__mobile__btns {
-      display: none;
-      width: 100%;
-      padding: 0 30px; }
-      .header__nav__mobile__btns button {
-        padding: 10px 0; }
-      @media only screen and (max-width: 992px) {
-        .header__nav__mobile__btns {
-          display: flex; } }
+          padding: 20px 30px; }
+          .header__nav--open ul li a:hover {
+            border-radius: 0; }
+  .header__nav__mobile__btns {
+    display: none;
+    width: 100%;
+    padding: 0 30px; }
+    .header__nav__mobile__btns button {
+      padding: 10px 0; }
+    @media only screen and (max-width: 992px) {
+      .header__nav__mobile__btns {
+        display: flex; } }
   @media only screen and (max-width: 992px) {
     .header__btns {
       display: none; } }
@@ -245,7 +256,11 @@ body {
         height: 2px;
         background-color: #202142;
         position: absolute;
-        transition: 0.2s ease-in-out;
+        transition: 0.1s;
+        -webkit-transition: 0.1s;
+        -moz-transition: 0.1s;
+        -ms-transition: 0.1s;
+        -o-transition: 0.1s;
         right: 0; }
       .header__hamburger__icon::before {
         transform: translateY(-10px); }
@@ -298,6 +313,9 @@ body {
             font-size: 14px; } }
         .search__content__input button svg {
           margin-left: 10px; }
+          @media only screen and (max-width: 992px) {
+            .search__content__input button svg {
+              width: 16px; } }
       .search__content__input .form-control {
         width: calc(100% - 168px);
         height: 100%; }
@@ -305,8 +323,14 @@ body {
           height: 100%;
           width: 100%;
           border: none; }
+          @media only screen and (max-width: 992px) {
+            .search__content__input .form-control input[type="text"] {
+              font-size: 14px; } }
         .search__content__input .form-control svg {
           margin: 0 10px; }
+          @media only screen and (max-width: 992px) {
+            .search__content__input .form-control svg {
+              width: 24px; } }
           .search__content__input .form-control svg path {
             stroke: #202142b4; }
   .search__day {

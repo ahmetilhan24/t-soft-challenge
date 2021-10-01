@@ -41,6 +41,9 @@
                 }
                 svg {
                     margin-left: 10px;
+                    @media only screen and (max-width: $medium) {
+                        width: 16px;
+                    }
                 }
             }
             .form-control {
@@ -50,9 +53,15 @@
                     height: 100%;
                     width: 100%;
                     border: none;
+                    @media only screen and (max-width: $medium) {
+                        font-size: 14px;
+                    }
                 }
                 svg {
                     margin: 0 10px;
+                    @media only screen and (max-width: $medium) {
+                        width: 24px;
+                    }
                     path {
                         stroke: $dark-two;
                     }
