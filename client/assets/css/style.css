@@ -48,6 +48,81 @@ body {
   .btn:hover {
     opacity: .9; }
 
+.filters__short {
+  width: 236px;
+  height: 61px;
+  background-color: #FCFCFF;
+  border: 1px solid #EFEFFF;
+  border-radius: 70px;
+  padding: 5px; }
+  .filters__short__link {
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    border-radius: 45px;
+    color: #202142b4;
+    font-weight: 600;
+    font-size: 16px; }
+    .filters__short__link--active {
+      background-color: #fff;
+      color: #202142;
+      border: 1px solid #EFEFFF; }
+    .filters__short__link:hover {
+      border: 1px solid #EFEFFF; }
+
+.filters__category__link {
+  height: 44px;
+  padding: 0 10px;
+  border-radius: 32px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #202142b4; }
+  .filters__category__link--active {
+    border: 1px solid #EFEFFF;
+    color: #202142;
+    background-color: #FCFCFF; }
+  .filters__category__link:hover {
+    border: 1px solid #EFEFFF; }
+
+.filters__tool__item {
+  width: 61px;
+  height: 61px;
+  background-color: #FCFCFF;
+  border: 1px solid #EFEFFF;
+  border-radius: 50%;
+  margin: 0 7.5px; }
+  .filters__tool__item:nth-last-child(1) {
+    margin-right: 0; }
+  .filters__tool__item--active {
+    border-color: #FF6A95; }
+  .filters__tool__item:hover {
+    border-color: #202142b4; }
+
+.card {
+  width: 425px; }
+  .card__top {
+    width: 100%;
+    height: 319px;
+    border-radius: 15px;
+    overflow: hidden; }
+    .card__top__poster {
+      width: 100%;
+      height: 100%; }
+      .card__top__poster img {
+        object-fit: cover; }
+  .card__bottom {
+    width: 100%;
+    padding-top: 20px; }
+    .card__bottom__author__avatar {
+      margin-right: 14px; }
+      .card__bottom__author__avatar img {
+        width: 38px;
+        height: 38px;
+        overflow: hidden;
+        border-radius: 50%;
+        object-fit: cover; }
+
 .header {
   width: 100%;
   height: auto;
@@ -73,7 +148,7 @@ body {
       display: inline-block; }
       .header__nav__ul__li a {
         text-decoration: none;
-        color: #202142ca;
+        color: #202142b4;
         font-size: 16px;
         font-weight: 500;
         transition: 0.2s;
@@ -196,7 +271,7 @@ body {
         .search__content__input .form-control svg {
           margin: 0 10px; }
           .search__content__input .form-control svg path {
-            stroke: #202142ca; }
+            stroke: #202142b4; }
   .search__day {
     position: absolute;
     left: 0;
@@ -209,3 +284,13 @@ body {
       color: #FF6A95;
       font-size: 16px;
       font-weight: 600; }
+
+.cards {
+  width: 100%;
+  padding: 45px 0; }
+  .cards__filters {
+    width: 100%;
+    justify-content: space-between; }
+  .cards__area {
+    width: 100%;
+    padding-top: 45px; }

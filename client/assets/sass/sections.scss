@@ -1,3 +1,4 @@
+//Home search area
 .search {
     width: 100%;
     position: relative;
@@ -70,5 +71,18 @@
             font-size: 16px;
             font-weight: 600;
         }
+    }
+}
+//Home cards
+.cards{
+    width: 100%;
+    padding: 45px 0;
+    &__filters{
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__area{
+        width: 100%;
+        padding-top: 45px;
     }
 }

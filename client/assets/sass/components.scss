@@ -20,3 +20,103 @@
         opacity: .9;
     }
 }
+//filterts
+.filters{
+    &__short{
+        width: 236px;
+        height: 61px;
+        background-color: $purple-one;
+        border: 1px solid $border-one;
+        border-radius: 70px;
+        padding: 5px;
+        &__link{
+            width: 50%;
+            height: 100%;
+            text-decoration: none;
+            border-radius: 45px;
+            color: $dark-two;
+            font-weight: 600;
+            font-size: 16px;
+            &--active{
+                background-color: $white;
+                color: $dark-one;
+            border: 1px solid $border-one;
+
+            }
+            &:hover{
+                border: 1px solid $border-one;
+            }
+        }
+    }
+    &__category{
+        &__link{
+            height: 44px;
+            padding: 0 10px;
+            border-radius: 32px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: $dark-two;
+            &--active{
+            border: 1px solid $border-one;
+            color: $dark-one;
+            background-color: $purple-one;
+            }
+            &:hover{
+                border: 1px solid $border-one;
+            }
+        }
+    }
+    &__tool{
+        &__item{
+            width: 61px;
+            height: 61px;
+            background-color: $purple-one;
+            border: 1px solid $border-one;
+            border-radius: 50%;
+            margin: 0 7.5px;
+            &:nth-last-child(1){
+                margin-right: 0;
+            }
+            &--active{
+                border-color: $pink-one;
+            }
+            &:hover{
+                border-color: $dark-two;
+            }
+        }
+    }
+}
+//item card
+.card{
+    width: 425px;
+    &__top{
+        width: 100%;
+        height: 319px;
+        border-radius: 15px;
+        overflow: hidden;
+        &__poster{
+            width: 100%;
+            height: 100%;
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+    &__bottom{
+        width: 100%;
+        padding-top: 20px;
+        &__author{
+            &__avatar{
+                margin-right: 14px;
+                img{
+                    width: 38px;
+                    height: 38px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
