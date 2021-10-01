@@ -5,14 +5,25 @@
     padding: 30px 50px;
     justify-content: space-between;
     border-bottom: 1px solid $border-one;
+    @media only screen and (max-width: $medium) {
+        padding: 16px 30px;
+    }
     &__logo {
         &__link {
             svg {
                 height: 40px;
+                @media only screen and (max-width: $medium) {
+                    height: 36px;
+                }
             }
         }
     }
     &__nav {
+        max-height: 0;
+        overflow: hidden;
+        @media only screen and (max-width: $medium) {
+            display: none;
+        }
         &__ul {
             &__li {
                 list-style: none;
@@ -29,6 +40,89 @@
                         border-radius: 32px;
                         color: $dark-one;
                     }
+                }
+            }
+        }
+        //nav open
+        &--open{
+            display: flex;
+            width: 100%;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            background-color: $white;
+            animation: navMenu .4s ease-out forwards ;
+            ul{
+                width: 100%;
+                li{
+                    width: 100%;
+                    display: block;
+                    a{
+                        display: block;
+                        width: 100%;
+                        padding: 20px 30px;
+                        &:hover{
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+        }
+        //mobile buttons
+        &__mobile__btns{
+            display: none;
+            width: 100%;
+            padding: 0 30px;
+            button{
+                padding: 10px 0;
+            }
+            @media only screen and (max-width: $medium) {
+                display: flex;
+            }
+        }
+    }
+    &__btns {
+        @media only screen and (max-width: $medium) {
+            display: none;
+        }
+    }
+    &__hamburger {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        display: none;
+        @media only screen and (max-width: $medium) {
+            display: flex;
+        }
+        &__icon {
+            width: 30px;
+            height: 2px;
+            background-color: $dark-one;
+            position: relative;
+            &::before,
+            &::after {
+                content: "";
+                width: 30px;
+                height: 2px;
+                background-color: $dark-one;
+                position: absolute;
+                transition: 0.2s ease-in-out;
+                right: 0;
+            }
+            &::before {
+                transform: translateY(-10px);
+            }
+            &::after {
+                transform: translateY(10px);
+            }
+            //nav opened
+            &--open {
+                height: 0;
+                &::before {
+                    transform: rotate(-45deg);
+                }
+                &::after{
+                    transform: rotate(45deg);
                 }
             }
         }

@@ -28,7 +28,7 @@
                 </svg>
             </a>
         </div>
-        <nav class="header__nav">
+        <nav class="header__nav flex--column">
             <ul class="header__nav__ul">
                 <li class="header__nav__ul__li">
                     <a href="#">Free designs</a>
@@ -46,15 +46,39 @@
                     <a href="#">About</a>
                 </li>
             </ul>
+            <!--Btns for mobile menu-->
+            <div class="header__nav__mobile__btns flex--column">
+                <button class="btn btn--bg--none">Log in</button>
+                <button class="btn btn--bg--dark">Sign Up</button>
+            </div>
         </nav>
-        <div class="header__btns flex--row">
+        <div class="header__btns flex--row row--middle--center">
             <button class="btn btn--bg--none">Log in</button>
             <button class="btn btn--bg--dark">Sign Up</button>
+        </div>
+        <div onclick="navMenu(this)" class="header__hamburger flex--column column--middle--center">
+            <div class="header__hamburger__icon"></div>
         </div>
     </header>
     <!--Container-->
     <div class="container-in flex--column column--middle--center">
-
+        <!--Home search area-->
+        <section class="search flex--column column--middle--center">
+            <div class="search__content flex--column column--middle--center">
+                <h3 class="search__content__title">Free UI resources for everyone</h3>
+                <p class="search__content__desc">The largest database of 100% free UI components and designs available in the formats popular by UI designers.</p>
+                <form action="" class="search__content__input flex--row row--middle--center">
+                    <button class="btn">Free designs
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1.25L9 8.75L16.5 1.25" stroke="#202142" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                    </button>
+                    <div class="form-control">
+                        <input type="text" placeholder="Search">
+                    </div>
+                </form>
+            </div>
+        </section>
     </div>
     <!--Scripts-->
     <script type="text/javascript" src="assets/js/app.js" defer></script>
