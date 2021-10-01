@@ -88,21 +88,15 @@
 }
 //item card
 .card {
-    width: 24%;
+    width: auto;
+    break-inside: avoid;
     margin-bottom: 30px;
-    @media only screen and (max-width: $extra-large) {
-        width: 32%;
-    }
-    @media only screen and (max-width: $medium) {
-        width: 49%;
-    }
-    @media only screen and (max-width: $small) {
-        width: 100%;
-    }
+    
     &__top {
         width: 100%;
         height: 319px;
         overflow: hidden;
+        position: relative;
         border-radius: 15px;
         &__poster {
             width: 100%;
@@ -121,6 +115,23 @@
                     transform: scale(1.1);
                    }
                 }
+            }
+        }
+        &__tool{
+            width: 61px;
+            height: 61px;
+            border-radius: 50%;
+            background-color: $white;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            z-index: 11;
+            svg{
+                width: 50%;
+            }
+            @media only screen and (max-width: $small) {
+                width: 41px;
+                height: 41px;
             }
         }
     }
@@ -154,4 +165,13 @@
             }
         }
     }
+}
+//not found
+.not-found{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: $dark-two;
+    font-size: 16px;
 }

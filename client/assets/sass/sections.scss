@@ -129,8 +129,18 @@
     }
     &__area {
         width: 100%;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        column-count: 4;
+        column-gap: 20px;
         padding-top: 45px;
+        position: relative;
+        @media only screen and (max-width: $extra-large) {
+            column-count: 3;
+        }
+        @media only screen and (max-width: $medium) {
+            column-count: 2;
+        }
+        @media only screen and (max-width: $small) {
+            column-count: 1;
+        }
     }
 }

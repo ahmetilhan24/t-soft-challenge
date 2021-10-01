@@ -2,14 +2,101 @@
     "posts": [
         {
             "id": 1,
-            "title": "Ledger as a service",
             "author": {
                 "id": 1,
-                "nick": "Jenny Mola",
-                "poster": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
+                "nick": "ahmet5676",
+                "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
             },
-            "tool": "XD",
-            "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png"
+            "tool": "FİGMA",
+            "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png",
+            "info": {
+                "clap": 22,
+                "code": 30
+            }
+        },
+        {
+            "id": 1,
+            "author": {
+                "id": 1,
+                "nick": "betül",
+                "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
+            },
+            "tool": "FİGMA",
+            "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png",
+            "info": {
+                "clap": 22,
+                "code": 30
+            }
+        },
+        {
+            "id": 1,
+            "author": {
+                "id": 1,
+                "nick": "ahmet56",
+                "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
+            },
+            "tool": "FİGMA",
+            "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png",
+            "info": {
+                "clap": 22,
+                "code": 30
+            }
+        },
+        {
+            "id": 1,
+            "author": {
+                "id": 1,
+                "nick": "ahmet",
+                "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
+            },
+            "tool": "FİGMA",
+            "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png",
+            "info": {
+                "clap": 22,
+                "code": 30
+            }
+        },
+        {
+            "id": 1,
+            "author": {
+                "id": 1,
+                "nick": "ahmet5676",
+                "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
+            },
+            "tool": "FİGMA",
+            "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png",
+            "info": {
+                "clap": 22,
+                "code": 30
+            }
+        },
+        {
+            "id": 1,
+            "author": {
+                "id": 1,
+                "nick": "ahmet5676",
+                "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
+            },
+            "tool": "FİGMA",
+            "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png",
+            "info": {
+                "clap": 22,
+                "code": 30
+            }
+        },
+        {
+            "id": 1,
+            "author": {
+                "id": 1,
+                "nick": "ahmet5676",
+                "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?size=626&ext=jpg&ga=GA1.2.328000218.1629676800"
+            },
+            "tool": "FİGMA",
+            "poster": "https://www.uidesigndaily.com/uploads/1451/day_1451_thumb.png",
+            "info": {
+                "clap": 22,
+                "code": 30
+            }
         }
     ]
 }
