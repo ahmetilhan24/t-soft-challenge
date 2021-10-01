@@ -8,6 +8,9 @@
     @media only screen and (max-width: $medium) {
         padding: 16px 30px;
     }
+    @media only screen and (max-width: $extra-small) {
+        padding: 16px 20px;
+    }
     &__logo {
         &__link {
             svg {
@@ -24,8 +27,7 @@
         }
         overflow: hidden;
         position: relative;
-        z-index: 9999
-        ;
+        z-index: 9999;
         @media only screen and (max-width: $medium) {
             display: none;
         }

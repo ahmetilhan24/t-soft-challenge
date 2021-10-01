@@ -25,6 +25,9 @@ body {
   @media only screen and (max-width: 992px) {
     .container-in {
       padding: 0 36px; } }
+  @media only screen and (max-width: 576px) {
+    .container-in {
+      padding: 0 20px; } }
 
 .btn {
   display: block;
@@ -156,6 +159,9 @@ body {
   @media only screen and (max-width: 992px) {
     .header {
       padding: 16px 30px; } }
+  @media only screen and (max-width: 576px) {
+    .header {
+      padding: 16px 20px; } }
   .header__logo__link svg {
     height: 40px; }
     @media only screen and (max-width: 992px) {
@@ -287,12 +293,15 @@ body {
         padding: 0;
         width: 168px;
         border-right: 1px solid #EFEFFF; }
+        @media only screen and (max-width: 992px) {
+          .search__content__input button {
+            font-size: 14px; } }
         .search__content__input button svg {
           margin-left: 10px; }
       .search__content__input .form-control {
         width: calc(100% - 168px);
         height: 100%; }
-        .search__content__input .form-control input[type=text] {
+        .search__content__input .form-control input[type="text"] {
           height: 100%;
           width: 100%;
           border: none; }
@@ -312,6 +321,9 @@ body {
       color: #FF6A95;
       font-size: 16px;
       font-weight: 600; }
+      @media only screen and (max-width: 992px) {
+        .search__day__text {
+          font-size: 14px; } }
 
 .cards {
   width: 100%;
@@ -319,6 +331,29 @@ body {
   .cards__filters {
     width: 100%;
     justify-content: space-between; }
+    @media only screen and (max-width: 992px) {
+      .cards__filters {
+        flex-wrap: wrap;
+        align-items: center; }
+        .cards__filters .filters__category {
+          order: 3;
+          -ms-flex-order: 3;
+          margin-top: 20px;
+          width: 100%;
+          border-top: 1px solid #EFEFFF;
+          padding-top: 10px; }
+          .cards__filters .filters__category__link {
+            font-size: 14px; }
+        .cards__filters .filters__short {
+          width: 140px;
+          height: 40px; }
+          .cards__filters .filters__short__link {
+            font-size: 14px; }
+        .cards__filters .filters__tool__item {
+          width: 40px;
+          height: 40px; }
+          .cards__filters .filters__tool__item svg {
+            width: 50%; } }
   .cards__area {
     width: 100%;
     justify-content: space-between;

@@ -31,34 +31,37 @@
             @media only screen and (max-width: $medium) {
                 height: 60px;
             }
-            button{
+            button {
                 background-color: transparent;
                 padding: 0;
                 width: 168px;
                 border-right: 1px solid $border-one;
-                svg{
+                @media only screen and (max-width: $medium) {
+                    font-size: 14px;
+                }
+                svg {
                     margin-left: 10px;
                 }
             }
             .form-control {
                 width: calc(100% - 168px);
                 height: 100%;
-                input[type=text] {
+                input[type="text"] {
                     height: 100%;
                     width: 100%;
-                    border: none
+                    border: none;
                 }
-                svg{
+                svg {
                     margin: 0 10px;
-                    path{
+                    path {
                         stroke: $dark-two;
                     }
                 }
             }
         }
     }
-    //fixed day 
-    &__day{
+    //fixed day
+    &__day {
         position: absolute;
         left: 0;
         top: 30px;
@@ -66,22 +69,56 @@
         height: 40px;
         border-radius: 10px;
         background-color: $white;
-        &__text{
+        &__text {
             color: $pink-one;
             font-size: 16px;
             font-weight: 600;
+            @media only screen and (max-width: $medium) {
+                font-size: 14px;
+            }
         }
     }
 }
 //Home cards
-.cards{
+.cards {
     width: 100%;
     padding: 45px 0;
-    &__filters{
+    &__filters {
         width: 100%;
         justify-content: space-between;
+        @media only screen and (max-width: $medium) {
+            flex-wrap: wrap;
+            align-items: center;
+            .filters__category {
+                order: 3;
+                -ms-flex-order: 3;
+                margin-top: 20px;
+                width: 100%;
+                border-top: 1px solid $border-one;
+                padding-top: 10px;
+                &__link {
+                    font-size: 14px;
+                }
+            }
+            .filters__short {
+                width: 140px;
+                height: 40px;
+                &__link {
+                    font-size: 14px;
+                }
+            }
+            .filters__tool {
+                &__item {
+                    width: 40px;
+                    height: 40px;
+                    svg {
+                        width: 50%;
+                    }
+                }
+            }
+        }
     }
-    &__area{
+    &__area {
         width: 100%;
         justify-content: space-between;
         flex-wrap: wrap;
