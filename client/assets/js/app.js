@@ -80,7 +80,7 @@ const innerLoop = (area, data) => {
     //wait data
     var elems;
     elems = {
-        notFound: `<p class="not-found flex--row row--middle--center">Henüz içerik yok!</p>`,
+        notFound: `<p class="not-found flex--row row--middle--center">İçerik bulunamadı!</p>`,
     }
     //clear area
     area.innerHTML = "";
